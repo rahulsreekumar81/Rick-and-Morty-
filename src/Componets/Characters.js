@@ -11,8 +11,6 @@ export const Characters = () => {
     }
         const { data , status } = useQuery(["characters",page],fetchCharacters)
 
-        console.log(data);
-
         if(status === "loading"){
             return <div>Loading</div>
         }
